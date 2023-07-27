@@ -16,7 +16,7 @@ public class missingElementsInAnArray {
                     System.out.println();
                 }
 
-        for (int k : array) { 
+        for (int k : array) { // Figuring out Max And Min Value In Given Array.
             largestEle = Math.max(largestEle, k);
             smallestEle = Math.min(smallestEle, k);
         }
