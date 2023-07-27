@@ -4,19 +4,19 @@ public class missingElementsInAnArray {
     public static void main(String[] args) {
 
                 final int size = 10 ;
-                int largestEle = Integer.MIN_VALUE ;
-                int smallestEle = Integer.MAX_VALUE ;
+                int largestEle = Integer.MIN_VALUE ; // -Infinity
+                int smallestEle = Integer.MAX_VALUE ;// +Infinity
 
                 int []array =  new int[size] ;
 
                 Scanner inputEle = new Scanner(System.in) ;
-                for(int i=0 ; i<array.length ; i++){
+                for(int i=0 ; i<array.length ; i++){ // User will input.
                     System.out.print("Input Element At Index ["+i+"] : ");
                     array[i] = inputEle.nextInt() ;
                     System.out.println();
                 }
 
-        for (int k : array) {
+        for (int k : array) { 
             largestEle = Math.max(largestEle, k);
             smallestEle = Math.min(smallestEle, k);
         }
