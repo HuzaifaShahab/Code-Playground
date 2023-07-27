@@ -19,7 +19,7 @@ public class Element_search_multiArray {
                 // Elements of row-1 that are not in row-2
                 System.out.println("Elements of row-1 that are not in row-2");
                 for (int i = 0 ; i<multiArray[0].length ; i++){
-                    int element = multiArray[0][i] ;              // 1st Element
+                    int element = multiArray[0][i] ;              // 1st Element & so on
                     boolean mapElement = true ;
 
                     for (int j=0 ; j<multiArray[1].length ; j++){
