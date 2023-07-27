@@ -17,8 +17,8 @@ public class missingElementsInAnArray {
                 }
 
         for (int k : array) { // Figuring out Max And Min Value In Given Array.
-            largestEle = Math.max(largestEle, k);
-            smallestEle = Math.min(smallestEle, k);
+            largestEle = Math.max(largestEle,k);
+            smallestEle = Math.min(smallestEle,k);
         }
                 System.out.println("These are the missing elements in given array");
                 for (int i = smallestEle ; i <= largestEle ; i++){
@@ -30,7 +30,7 @@ public class missingElementsInAnArray {
                             break;
                         }
                     }
-                    if (!flag){
+                    if (!flag){ // Flag will nominate missing value.
                         System.out.print(missingElement+" ");
                     }
                 }
