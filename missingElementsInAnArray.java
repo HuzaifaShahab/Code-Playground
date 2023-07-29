@@ -16,16 +16,16 @@ public class missingElementsInAnArray {
                     System.out.println();
                 }
 
-        for (int k : array) { // Figuring out Max And Min Value In Given Array.
-            largestEle = Math.max(largestEle,k);
-            smallestEle = Math.min(smallestEle,k);
+        for (int i=0 ; i<array.length; i++ ) { // Figuring out Max And Min Value In Given Array.
+            largestEle = Math.max(largestEle,array[i]);
+            smallestEle = Math.min(smallestEle,array[i]);
         }
                 System.out.println("These are the missing elements in given array");
                 for (int i = smallestEle ; i <= largestEle ; i++){
                     int missingElement = i ;
                     boolean flag = false ;
-                    for (int k : array) {
-                        if (missingElement == k) {
+                    for (int j=0 ; j<array.length ; j++) {
+                        if (missingElement == array[j]) {
                             flag = true;
                             break;
                         }
