@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class PalindromeStringChecking {
     public static void checkPalindrome (String palin){
-        int i = 0 ;
-        while (palin.charAt(i) == palin.length()-i-1 ){
-            i++ ;
-        }
+       for (int i=0 ; i<palin.length()/2 ; i++){
+           if (palin.charAt(i) != palin.charAt(palin.length()-1-i)){
+               System.out.println("Given Text Is Not A Palindrome");
+           }
+       }
+        System.out.println("Given Text Is A Palindrome");
     }
     public static void main(String[] args) {
         String palin = null ;
