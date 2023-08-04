@@ -7,7 +7,7 @@ public class PalindromeStringChecking {
                System.out.println("Given Text Is Not A Palindrome");
            }
        }
-        System.out.println("Given Text Is A Palindrome");
+
     }
     public static void main(String[] args) {
         String palin = null ;
