@@ -1,8 +1,8 @@
 public class StringComparisonConcept {
     public static void main(String[] args) {
         String st1 = "Tony" ;
-        String st2 = "Tony" ;
-        String st3 = new String ("Tony") ;
+        String st2 = "Tony" ; // Pointing to previous string address.
+        String st3 = new String ("Tony") ;         // Newly String Created
 
 //        if (st1==st3) System.out.println("Strings Are Equal");     // Not Equal b/c they are comparing at object level
 //        else System.out.println("Not Equal");
