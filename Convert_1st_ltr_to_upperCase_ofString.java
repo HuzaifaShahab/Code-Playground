@@ -1,20 +1,23 @@
 public class Convert_1st_ltr_to_upperCase_ofString {
     public static void letterUppercase (String str){
         StringBuilder newStr = new StringBuilder("") ;
-        Character ch ;
+        int i = 0 ;
+        char ch = Character.toUpperCase(str.charAt(i)) ; // To use (upperCase) for (char) you have to use Character Class.
+        newStr.append(ch) ;
+        for (i=1 ; i<str.length();i++){
 
-        ch=0 ;
-        newStr.append(Character.toUpperCase(ch)) ;
-        for (ch=1 ; ch<str.length(); ch++){
-            if (ch == ' ' && ch < str.length()){
-                newStr.append(Character.toUpperCase(ch+1)) ;
-            }else  newStr.append(ch) ;
+            if (str.charAt(i) == ' ' && i<str.length()-1){ // Imp Logic
+                newStr.append(str.charAt(i)) ;
+                i++ ;
+                newStr.append(Character.toUpperCase(str.charAt(i))) ; // Same we will upper case the letter after space.
+            }else
+                newStr.append(str.charAt(i)) ;
 
         }
-        System.out.println(newStr);
+        System.out.println(newStr);      // Printing
     }
     public static void main(String[] args) {
-        String str = "hi, iam huzaifa shahab" ;
+        String str = "hi, i am huzaifa shahab !" ;
             letterUppercase(str);
     }
 }
