@@ -1,8 +1,12 @@
 public class checkingStrings_Anagram {
     public static void main(String[] args) {
-        String str1 = "cate" ;
-        String str2 = "race" ;
+        // Brute Force --- Not Much Optimized Logic
+        String str1 = "care" ;
+        String str2 = "Race" ;
         boolean anagram = false ;
+
+        str1 = str1.toLowerCase() ;
+        str2 = str2.toLowerCase() ;
 
         for (int i=0; i<str1.length(); i++) {
             int j=0 ;
