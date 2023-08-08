@@ -14,7 +14,7 @@ public class checkingStrings_Anagram {
                 else anagram = false ;
                 j++ ;
             }
-//            if (!anagram) break ;
+            if (!anagram) break ;
         }
         if (anagram) System.out.println("Given Strings Are Anagram Of Each Other");
         else System.out.println("Given Strings Are Not Anagram of each other");
