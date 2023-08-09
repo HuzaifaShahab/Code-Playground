@@ -8,7 +8,7 @@ public class Optimized_Anagram_Finding {
         str1 = str1.toLowerCase() ;
         str2 = str2.toLowerCase() ;
 
-        if (str1.length() == str2.length()){
+        if (str1.length() == str2.length()){    // String length must be equal for Anagram.
             char []strOne = str1.toCharArray() ;
             char []strTwo = str2.toCharArray() ;
 
