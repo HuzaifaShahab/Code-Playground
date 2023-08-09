@@ -12,9 +12,9 @@ public class Optimized_Anagram_Finding {
             char []strOne = str1.toCharArray() ;   // Pushing string into character array.
             char []strTwo = str2.toCharArray() ;
 
-            Arrays.sort(strOne);
+            Arrays.sort(strOne); // Sorting the Array to match string.
             Arrays.sort(strTwo);
-
+            // Now checking sorted array content.
             if (Arrays.equals(strOne , strTwo))  System.out.println("Given Strings Are Anagram Of Each Other");
             else                                 System.out.println("Given Strings Are Not Anagram Of Each Other");
         }
