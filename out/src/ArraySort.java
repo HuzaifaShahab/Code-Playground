@@ -1,6 +1,8 @@
 public class ArraySort {
 
-     void setArraySort (int [] array){
+     String name ;
 
-    }
+     void setName (String name){
+         this.name = name ;
+     }
 }
