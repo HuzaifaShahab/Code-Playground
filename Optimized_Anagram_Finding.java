@@ -4,7 +4,7 @@ public class Optimized_Anagram_Finding {
     public static void main(String[] args) {
         String str1 = "race" ;
         String str2 = "caRe" ;
-// Converting String to lower case.
+// Converting String to lower case before using.
         str1 = str1.toLowerCase() ;
         str2 = str2.toLowerCase() ;
 
