@@ -12,7 +12,5 @@ public class Main {
             System.out.print("Input Element No "+i+1+" : "+sc.nextInt());
             System.out.println();
         }
-
-        
     }
 }
