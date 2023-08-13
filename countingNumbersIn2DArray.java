@@ -2,10 +2,10 @@ public class countingNumbersIn2DArray {
     public static int duplicateNumbers(int[][] multiArray , int key){
 
         int count = 0 ;
-        for(int i=0;i<multiArray.length;i++){
+        for(int i=0;i<multiArray.length;i++){      
             for(int j=0;j<multiArray[0].length;j++){
 
-               if (multiArray[i][j]==key)  count++ ;
+               if (multiArray[i][j]==key)  count++ ; // Count will increment its value if true.
             }
         }
         return count ;
