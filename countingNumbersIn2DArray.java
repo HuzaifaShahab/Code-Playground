@@ -1,7 +1,7 @@
 public class countingNumbersIn2DArray {
     //Huzaifa Shahab dummy-test 1
     public static int duplicateNumbers(int[][] multiArray , int key){
-
+// Huzaifa Shahab test - 2
         int count = 0 ;
         for(int i=0;i<multiArray.length;i++){
             for(int j=0;j<multiArray[0].length;j++){
