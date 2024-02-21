@@ -1,5 +1,6 @@
 public class countingNumbersIn2DArray {
     //Huzaifa Shahab dummy-test 1
+    //practicing
     // practicing 2nd
     public static int duplicateNumbers(int[][] multiArray , int key){
 
